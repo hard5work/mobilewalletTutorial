@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MobileWallet</string>
+    <string name="current_balance">CB:</string>
+    <string name="previous_balance">PB:</string>
+    <string name="add_balance">Add/Used Balance</string>
+    <string name="use_balance">Used Balance</string>
+    <string name="remarks">Remarks</string>
+    <string name="add_statement">Add Statement</string>
+    <string name="used_statement">Used Statement</string>
+    <string name="add_used">A/U Amount</string>
+    <string name="amount">Rs. 1000</string>
+    <string name="add">Add</string>
+    <string name="use">Use</string>
+    <string name="add_remarks"> Recv/Gave frm/to </string>
+    <string name="options">Options</string>
+    <string name="dates">Date</string>
+    <string name="allStatement">All Statement</string>
+</resources>

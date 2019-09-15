@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:paddingRight="2dp"
+        android:paddingLeft="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/prevbl"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@drawable/black_border"
+            android:gravity="center"
+            android:text="@string/previous_balance"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/currbl"
+            android:layout_toRightOf="@+id/prevbl"
+            android:layout_toEndOf="@+id/prevbl"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@drawable/black_border"
+            android:gravity="center"
+            android:text="@string/current_balance"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/addused"
+            android:layout_toEndOf="@+id/currbl"
+            android:layout_toRightOf="@id/currbl"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@drawable/black_border"
+            android:gravity="center"
+            android:text="@string/add_used"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/datetime"
+            android:layout_toEndOf="@+id/addused"
+            android:layout_toRightOf="@+id/addused"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/black_border"
+            android:gravity="center"
+            android:text="@string/dates"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/rema"
+            android:layout_toRightOf="@+id/datetime"
+            android:layout_toEndOf="@+id/datetime"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/black_border"
+            android:gravity="center"
+            android:text="@string/remarks"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
