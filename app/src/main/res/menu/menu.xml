@@ -14,6 +14,11 @@
         android:id="@+id/allStatement"
         android:title="@string/allStatement"
         />
+    <item
+        android:title="@string/add"
+        android:id="@+id/addV"
+        android:enabled="true"
+        />
 
 
 </menu>

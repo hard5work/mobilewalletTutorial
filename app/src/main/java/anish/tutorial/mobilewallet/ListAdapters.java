@@ -32,10 +32,13 @@ public class ListAdapters extends RecyclerView.Adapter<ListAdapters.ListHolders>
     @Override
     public void onBindViewHolder(@NonNull ListHolders holder, int position) {
         ColumnNames co = cols.get(position);
-        holder.pb.setText(String.valueOf(co.getPb()));
-        holder.cb.setText(String.valueOf(co.getCb()));
+        String pbs = "RS " + co.getPb();
+        holder.pb.setText(pbs);
+        String cbs = "Rs " + co.getCb();
+        holder.cb.setText(cbs);
         holder.remarks.setText(co.getRemarks());
-        holder.au.setText(String.valueOf(co.getAdd()));
+        String aus = "Rs " + co.getAdd();
+        holder.au.setText(aus);
         holder.dat.setText(co.getDate());
 
 
