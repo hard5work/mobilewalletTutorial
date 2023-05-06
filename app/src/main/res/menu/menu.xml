@@ -19,6 +19,15 @@
         android:id="@+id/addV"
         android:enabled="true"
         />
+    <item
+        android:id="@+id/about"
+        android:title="@string/about"
+        android:enabled="true"/>
+    <item
+        android:id="@+id/resetDate"
+
+        android:enabled="true"
+        android:title="@string/reset_data"/>
 
 
 </menu>

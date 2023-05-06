@@ -38,7 +38,7 @@ public class DBClass extends SQLiteOpenHelper {
         db.execSQL(
                 " CREATE TABLE " + TABLE_NAME +
                         " ( " + ID + " INTEGER PRIMARY KEY AUTOINCREMENT ," +
-                        CURRENT_BALANCE + " INT , " +
+                         CURRENT_BALANCE + " INT , " +
                         PREVIOUS_BALANCE + " INT , " +
                         AD_US_BLNCE + " INT , " +
                         STATUS + " INT , " +
@@ -51,6 +51,10 @@ public class DBClass extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
         db.execSQL(" DROP TABLE IF EXISTS " + TABLE_NAME);
+    }
+    public void deleteTable(){
+        dbs.execSQL(" DROP TABLE IF EXISTS " + TABLE_NAME);
+        onCreate(dbs);
     }
 
     public void addBtn(int add, int status, String datetime, String remarks) {
@@ -166,6 +170,7 @@ public class DBClass extends SQLiteOpenHelper {
         if (cus.moveToNext()){
             do{
                 ColumnNames co = new ColumnNames();
+                co.setId(cus.getString(cus.getColumnIndex(ID)));
                 co.setAdd(cus.getInt(cus.getColumnIndex(AD_US_BLNCE)));
                 co.setStatus(cus.getInt(cus.getColumnIndex(STATUS)));
                 co.setCb(cus.getInt(cus.getColumnIndex(CURRENT_BALANCE)));

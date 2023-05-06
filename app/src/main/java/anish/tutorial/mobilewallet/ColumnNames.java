@@ -1,8 +1,16 @@
 package anish.tutorial.mobilewallet;
 
 public class ColumnNames {
-    String remarks, Date;
+    String remarks, Date,id;
     int cb,pb,status,add;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public ColumnNames() {
     }

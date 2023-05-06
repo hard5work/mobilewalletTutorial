@@ -15,4 +15,8 @@
     <string name="options">Options</string>
     <string name="dates">Date</string>
     <string name="allStatement">All Statement</string>
+    <string name="about">About</string>
+    <string name="reset_data">Reset Data</string>
+    <string name="yourcbs">Current Balance Available</string>
+    <string name="previous_balances">Previous Balance</string>
 </resources>
